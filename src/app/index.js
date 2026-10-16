@@ -37,6 +37,8 @@ const grupos = [
       ["quiz", "Simulado interativo", "Perguntas e histórico em SQLite"],
       ["desafios", "Desafios de programação", "Questões práticas com gabarito"],
       ["dados", "Banco de demonstração", "Popular, limpar e reiniciar dados"],
+      ["comparacao", "Flutter x React Native", "Diferenças, vantagens e limitações"],
+      ["atualidades", "Atualidades de tecnologia", "Notícias e leituras enviadas"],
       ["sobre", "Como usar este projeto", "Roteiro e referências da disciplina"],
     ],
   },
