@@ -1,5 +1,5 @@
 import { Link, Stack } from "expo-router";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const grupos = [
@@ -60,11 +60,13 @@ export default function Inicio() {
             <Text style={s.grupoTitulo}>{grupo.titulo}</Text>
             <Text style={s.grupoDescricao}>{grupo.descricao}</Text>
             {grupo.paginas.map((pagina) => (
-              <Link key={pagina[0]} href={"/" + pagina[0]} style={s.item} accessibilityLabel={"Abrir " + pagina[1]}>
-                <View>
-                  <Text style={s.itemTitulo}>{pagina[1]}  →</Text>
-                  <Text style={s.itemDescricao}>{pagina[2]}</Text>
-                </View>
+              <Link key={pagina[0]} href={"/" + pagina[0]} asChild>
+                <Pressable style={s.item} accessibilityRole="link" accessibilityLabel={"Abrir " + pagina[1]}>
+                  <View>
+                    <Text style={s.itemTitulo}>{pagina[1]}  →</Text>
+                    <Text style={s.itemDescricao}>{pagina[2]}</Text>
+                  </View>
+                </Pressable>
               </Link>
             ))}
           </View>
