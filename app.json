@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "Laboratório Prova 2",
+    "slug": "prova2",
+    "scheme": "prova2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "plugins": ["expo-router", "expo-status-bar", "expo-sqlite"],
+    "ios": {"supportsTablet": true},
+    "android": {"package": "com.brunofiegenbaum.prova2"}
+  }
+}
