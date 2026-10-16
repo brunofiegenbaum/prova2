@@ -21,7 +21,9 @@ Se aparecer algum problema de cache:
 
     npx expo start -c --go
 
-**IMPORTANTE:** este projeto foi alinhado ao **Expo SDK 57**, usado no repositório da aula de 02/10/2026. Uma versão diferente do Expo Go pode exigir atualizar dependências. O SQLite do Expo não funciona na web sem configuração adicional: **priorize testar no celular**. Não foi necessário configurar servidor, Docker ou Postgres.
+**IMPORTANTE:** este projeto foi alinhado ao **Expo SDK 57**, usado no repositório da aula de 02/10/2026. Ele usa React Native 0.86.3, correção de compatibilidade publicada para o SDK 57.
+
+Em outubro de 2026, o Expo SDK 58 já foi anunciado, mas a versão 58 do Expo Go das lojas ainda está prevista para as próximas semanas. Confira se o Expo Go instalado corresponde ao SDK 57. Para iPhone, a distribuição do Expo Go 57 pode exigir EAS Go; para Android, o instalador compatível pode ser obtido pelo Expo CLI ou em https://expo.dev/go. Evite atualizar o SDK do trabalho para 58 sem revisar todas as dependências. Uma versão diferente do Expo Go pode exigir atualizar dependências. O SQLite do Expo não funciona na web sem configuração adicional: **priorize testar no celular**. Não foi necessário configurar servidor, Docker ou Postgres.
 
 ## Organização das pastas
 
